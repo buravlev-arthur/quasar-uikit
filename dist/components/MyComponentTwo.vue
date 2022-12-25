@@ -1,5 +1,7 @@
 <template>
-  <div id="countTwo">count: {{  count }}</div>
+  <div id="countTwo">
+    count: {{ count }}
+  </div>
 </template>
 
 <script setup lang="ts">

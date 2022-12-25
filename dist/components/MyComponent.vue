@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div id="countOne">count: {{  count }}</div>
+    <div id="countOne">
+      count: {{ count }}
+    </div>
     <div>a: {{ a }}</div>
   </div>
 </template>
