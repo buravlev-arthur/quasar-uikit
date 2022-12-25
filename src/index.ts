@@ -8,6 +8,10 @@
 
 module.exports = function (api: any) {
   api.extendQuasarConf( (conf: any) => {
-    conf.boot.push('~quasar-app-extension-uikit/src/boot/components')
+    conf.boot.push('~quasar-app-extension-uikit/src/boot/components');
+
+    if (api.hasVite !== true) {
+      conf.build.transpileDependencies.push(/quasar-app-extension-uikit[\\/]dist/)
+    }
   });
 };
