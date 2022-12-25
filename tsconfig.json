@@ -1,0 +1,16 @@
+{
+  "include": ["./src"],
+  "exclude": ["./src/templates", "./src/components/*.vue"],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist"
+  }
+}
