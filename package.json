@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-uikit",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "A Quasar Project",
   "author": "aburavlev <aburavlev@mobiledep.ru>",
   "exports": {
@@ -12,7 +12,7 @@
     "./src/boot/components": "./dist/boot/components.js"
   },
   "scripts": {
-    "build": "rimraf ./dist && copyfiles -f ./src/components/*.vue ./dist/components && tsc"
+    "build": "rimraf ./dist && tsc && cd ./src && copyfiles -e \"./**/*.ts\" ./**/* ../dist"
   },
   "repository": {
     "type": "git",
