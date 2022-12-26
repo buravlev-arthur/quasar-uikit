@@ -8,7 +8,14 @@
  */
 module.exports = function (api) {
     api.extendQuasarConf((conf) => {
+        // Компоненты
         conf.boot.push('~quasar-app-extension-uikit/src/boot/components');
+        // Иконки
+        conf.boot.push('~quasar-app-extension-uikit/src/boot/icons');
+        // Цвета
+        conf.framework.config.brand = require('./colors/index');
+        // Шрифты
+        conf.css.push('~quasar-app-extension-uikit/src/fonts');
         if (api.hasVite !== true) {
             conf.build.transpileDependencies.push(/quasar-app-extension-uikit[\\/]dist/);
         }

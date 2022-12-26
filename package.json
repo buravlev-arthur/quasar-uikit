@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-uikit",
-  "version": "0.0.38",
+  "version": "0.0.42",
   "description": "A Quasar Project",
   "author": "aburavlev <aburavlev@mobiledep.ru>",
   "license": "MIT",
@@ -10,10 +10,20 @@
     "./src/install": "./dist/install.js",
     "./src/uninstall": "./dist/uninstall.js",
     "./src/prompts": "./dist/prompts.js",
-    "./src/boot/components": "./dist/boot/components.js"
+    "./src/boot/components": "./dist/boot/components.js",
+    "./src/boot/icons": "./dist/boot/icons.js",
+    "./src/fonts": "./dist/fonts/index.scss",
+    "./Golos-Text_Bold.woff": "./dist/assets/fonts/Golos/Golos-Text_Bold.woff",
+    "./Golos-Text_Bold.woff2": "./dist/assets/fonts/Golos/Golos-Text_Bold.woff2",
+    "./Golos-Text_DemiBold.woff": "./dist/assets/fonts/Golos/Golos-Text_DemiBold.woff",
+    "./Golos-Text_DemiBold.woff2": "./dist/assets/fonts/Golos/Golos-Text_DemiBold.woff2",
+    "./Golos-Text_Medium.woff": "./dist/assets/fonts/Golos/Golos-Text_Medium.woff",
+    "./Golos-Text_Medium.woff2": "./dist/assets/fonts/Golos/Golos-Text_Medium.woff2",
+    "./Golos-Text_Regular.woff": "./dist/assets/fonts/Golos/Golos-Text_Regular.woff",
+    "./Golos-Text_Regular.woff2": "./dist/assets/fonts/Golos/Golos-Text_Regular.woff2"
   },
   "scripts": {
-    "build": "rimraf ./dist && tsc && cd ./src && copyfiles -e \"./**/*.ts\" ./**/* ../dist",
+    "build": "rimraf ./dist && tsc && cd ./src && copyfiles -e \"./**/*.ts\"  ./* ./**/* ./**/**/* ./**/**/**/* ../dist",
     "lint": "yarn eslint --ext .ts,.vue src"
   },
   "repository": {
